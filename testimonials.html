@@ -9,9 +9,7 @@
     />
     <style>
       .filled-star {
-        /* This CSS property makes the icon solid (filled) */
         font-variation-settings: "FILL" 1;
-        /* This CSS property changes the color of the icon */
         color: yellow;
       }
     </style>
@@ -20,15 +18,10 @@
   </head>
   <body>
     <main>
-      <div class="testimonial-1-2-layout">
-        <article
-          id="t1"
-          class="testimonial testimonial-one margin-padding-10px"
-        >
-          <section
-            id="t1-s1"
-            class="border-black border-radius-10px bg-black-color-white"
-          >
+      <div class="testimonial-grid">
+        <!-- Testimonial 1 -->
+        <article class="testimonial testimonial--bubble">
+          <section class="testimonial__content">
             <blockquote>
               <p>
                 I have been solving all the project ideas on roadmap.sh and I am
@@ -37,100 +30,96 @@
               <p>Highly recommended.</p>
             </blockquote>
           </section>
-          <section id="t1-s2">
+          <section class="testimonial__user">
             <img
               src="https://placehold.co/100x100"
-              class="circular-shape user-image"
+              class="user__image"
               alt="John Doe, Junior Frontend Developer"
             />
-            <div class="user-name-title">
-              <div class="font-20px inline-block">John Doe</div>
-              <div class="inline-block">Junior Frontend Developer</div>
+            <div class="user__info">
+              <div class="user__name">John Doe</div>
+              <div class="user__role">Junior Frontend Developer</div>
             </div>
           </section>
         </article>
-        <article
-          class="testimonial testimonial2 border-black border-radius-10px margin-padding-10px"
-        >
-          <blockquote id="t2-s1">
+
+        <!-- Testimonial 2 -->
+        <article class="testimonial testimonial--simple">
+          <blockquote class="testimonial__content">
             Since starting my career in 2021, I have only followed one resource,
             roadmap.sh, it truly helped me go from 0 to having a job and
             changing the financial trajectory of my family.
           </blockquote>
-          <section id="t2-s2">
+          <section class="testimonial__user">
             <img
               src="https://placehold.co/100x100"
-              class="circular-shape user-image"
+              class="user__image"
               alt="John Doe, Junior Frontend Developer"
             />
-            <div class="user-name-title">
-              <div class="font-20px inline-block">John Doe</div>
-              <div class="inline-block">Junior Frontend Developer</div>
+            <div class="user__info">
+              <div class="user__name">John Doe</div>
+              <div class="user__role">Junior Frontend Developer</div>
             </div>
           </section>
         </article>
       </div>
-      <article id="t3" class="testimonial t3">
+
+      <!-- Testimonial 3 -->
+      <article class="testimonial testimonial--highlight">
         <img
           src="https://placehold.co/265x265"
-          class="testimonial border-radius-20px"
+          class="testimonial__image"
           alt="Jackie Smith, Engineering Manager"
         />
-        <section
-          class="border-black border-radius-10px bg-black-color-white padding-10px"
-        >
-          <section class="stars">
+        <section class="testimonial__content">
+          <div class="stars">
             <span class="material-symbols-outlined filled-star">star</span>
             <span class="material-symbols-outlined filled-star">star</span>
             <span class="material-symbols-outlined filled-star">star</span>
             <span class="material-symbols-outlined filled-star">star</span>
             <span class="material-symbols-outlined filled-star">star</span>
-          </section>
-          <section>
-            <p class="t3-user-name font-28px">Jackie Smith</p>
-            <p class="t3-user-title grey-color">Engineering Manager</p>
-          </section>
-          <blockquote class="testimonial-text">
+          </div>
+          <div class="user__info">
+            <p class="user__name">Jackie Smith</p>
+            <p class="user__role">Engineering Manager</p>
+          </div>
+          <blockquote class="testimonial__text">
             I find myself recommending roadmap.sh to all the internees and
-            junior develoeprs. It's a great way to skill up and grow in your
+            junior developers. It's a great way to skill up and grow in your
             career.
           </blockquote>
         </section>
       </article>
-      <article
-        id="t4"
-        class="testimonial t4 border-black border-radius-10px margin-10px margin-padding-10px"
-      >
-        <blockquote>
+
+      <!-- Testimonial 4 -->
+      <article class="testimonial testimonial--carousel">
+        <blockquote class="testimonial__content">
           roadmap.sh is an incredible resource. I was fortunate to discover it
           during my university days in 2018. Back then, it was just a single
           repository with three images. It's amazing to see how much impact it
           has had on millions of lives since then.
         </blockquote>
-        <section id="t4-s1">
-          <button aria-label="Previous testimonial" id="btn-prev">&lt</button>
+        <section class="testimonial__avatars">
+          <button aria-label="Previous testimonial" class="nav-btn">‹</button>
           <img
-            id="t4-s1-img1"
             src="https://placehold.co/40x40"
-            class="circular-shape"
+            class="user__image user__image--small faded"
             alt="John Doe"
           />
           <img
-            id="t4-s1-img2"
             src="https://placehold.co/50x50"
-            class="circular-shape"
+            class="user__image"
             alt="John Doe"
           />
           <img
-            id="t4-s1-img3"
             src="https://placehold.co/40x40"
-            class="circular-shape"
+            class="user__image user__image--small faded"
             alt="John Doe"
           />
-          <button aria-label="Next testimonial" id="btn-next">&gt</button>
+          <button aria-label="Next testimonial" class="nav-btn">›</button>
         </section>
-        <section id="t4-s2">
-          <p class="font-20px">John Doe</p>
+        <section class="testimonial__footer">
+          <p class="user__name">John Doe</p>
         </section>
       </article>
     </main>
