@@ -1,6 +1,6 @@
-# Resume Project
+# Testimonial Project
 
-A simple HTML project that showcases layout of Testimonials.
+A simple HTML + CSS project that showcases layout of Testimonials.
 
 ## 🌐 Project URL
 
@@ -16,8 +16,8 @@ https://roadmap.sh/projects/testimonial-cards
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/<your-username>/basic-html-website.git
-cd basic-html-website
+git clone https://github.com/<your-username>/testimonials.git
+cd testimonials
 ```
 
-# basic-html-website
+# testimonials
